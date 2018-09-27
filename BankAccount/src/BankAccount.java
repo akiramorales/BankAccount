@@ -11,29 +11,29 @@ public class BankAccount
 	private double balance;
 	
 	
-	public BankAccount(String name, int accNum)
+	public BankAccount(String n, int aN)
 	{
-		name = name;
-		accNum = accNum;
+		name = n;
+		accNum = aN;
 		balance = 0;
 	}
 	
-	public BankAccount(String name, int accNum, double balance)
+	public BankAccount(String n, int aN, double b)
 	{
-		name = name;
-		accNum = accNum;
-		balance = balance;
+		name = n;
+		accNum = aN;
+		balance = b;
 	}
 	
 	
-	public double deposit(double amount)
+	public void deposit(double amount)
 	{
-		return balance + amount;
+		balance += amount;
 	}
 	
-	public double withdrawal(double amount)
+	public void withdrawal(double amount)
 	{
-		return balance - amount;
+		balance -= amount;
 	}
 	
 	public double getBalance()
